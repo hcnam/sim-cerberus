@@ -1,0 +1,24 @@
+- tick: 0
+- attacks:
+  - SYN flood:
+      seq ratio: [0.0, 1.0]
+      seq size: [64]
+      seq count: [1]
+- tick: 1
+- attacks:
+  - UDP flood:
+      seq ratio: [0.0, 1.0]
+      seq size: [64]
+      seq count: [1]
+- tick: 2
+- attacks:
+  - ICMP flood:
+      seq ratio: [0.0, 1.0]
+      seq size: [64]
+      seq count: [1]
+- tick: 3
+- attacks:
+  - HTTP flood:
+      seq ratio: [0.0, 1.0]
+      seq size: [64]
+      seq count: [1]

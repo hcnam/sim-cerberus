@@ -1,0 +1,44 @@
+- tick: 0
+- attacks:
+  - ICMP flood:
+      ratio: [0.0, 0.3]
+      rate ratio: 0.3
+  - UDP flood:
+      ratio: [0.3, 0.6]
+      rate ratio: 0.3
+  - DNS amp:
+      ratio: [0.6, 0.9]
+      rate ratio: 0.3
+  - Coremelt:
+      ratio: [0.9, 1.0]
+      rate ratio: 0.1
+- tick: 1
+- attacks:
+  - ICMP flood:
+      ratio: [0.0, 0.1]
+      rate ratio: 0.1
+  - UDP flood:
+      ratio: [0.1, 0.2]
+      rate ratio: 0.1
+  - DNS amp:
+      ratio: [0.2, 1.0]
+      rate ratio: 0.8
+- tick: 2
+- attacks:
+  - ICMP flood:
+      ratio: [0.0, 0.8]
+      rate ratio: 0.8
+  - UDP flood:
+      ratio: [0.8, 0.9]
+      rate ratio: 0.1
+  - DNS amp:
+      ratio: [0.9, 1.0]
+      rate ratio: 0.1
+- tick: 3
+- attacks:
+  - ICMP flood:
+      ratio: [0.0, 0.2]
+      rate ratio: 0.2
+  - Coremelt:
+      ratio: [0.2, 1.0]
+      rate ratio: 0.8

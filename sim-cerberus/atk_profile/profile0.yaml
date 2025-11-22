@@ -1,0 +1,53 @@
+- tick: 0
+- attacks:
+  - ICMP flood:
+      ratio: [0.0, 0.3]
+      rate ratio: 0.3
+  - Smurf attack:
+      ratio: [0.3, 0.6]
+      rate ratio: 0.3
+  - Coremelt:
+      ratio: [0.6, 0.9]
+      rate ratio: 0.3
+  - DNS amp:
+      ratio: [0.9, 1.0]
+      rate ratio: 0.1
+- tick: 1
+- attacks:
+  - UDP flood:
+      ratio: [0.0, 0.2]
+      rate ratio: 0.2
+  - DNS flood:
+      ratio: [0.2, 0.4]
+      rate ratio: 0.2
+  - NTP amp:
+      ratio: [0.4, 0.7]
+      rate ratio: 0.3
+  - SSDP amp:
+      ratio: [0.7, 1.0]
+      rate ratio: 0.3
+- tick: 2
+- attacks:
+  - Memcached amp:
+      ratio: [0.0, 0.2]
+      rate ratio: 0.2
+  - QUIC amp:
+      ratio: [0.2, 0.4]
+      rate ratio: 0.2
+  - HTTP flood:
+      ratio: [0.4, 0.7]
+      rate ratio: 0.3
+  - Slowloris:
+      ratio: [0.7, 1.0]
+      rate ratio: 0.3
+- tick: 3
+- attacks:
+  - SYN flood:
+      ratio: [0.0, 0.2]
+      rate ratio: 0.2
+  - ACK flood:
+      ratio: [0.2, 0.5]
+      rate ratio: 0.3
+  - RST FIN flood:
+      ratio: [0.5, 1.0]
+      rate ratio: 0.5

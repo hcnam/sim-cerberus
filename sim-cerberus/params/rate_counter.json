@@ -1,0 +1,52 @@
+{
+    "task_match_action_table" : {
+        "__comment__" : ["TASK_ID : {defense_no: 0~15}",
+                         "defense_no can be from 0 to 15 (0 is no defense), refer to Cerberus paper for full detail in numbers",
+                         "Parameters 'condition_key, task_key, action, value, is_bf' can be added for custom CMS update method",
+                         "Parameters 'defense_condition_key, defense_task_key, defense_threshold, if_action, else_action' can be added for custom defense method"
+                        ],
+        "0" : {
+            "__comment__" : "Rate counter",
+            "defense_no" : 0
+        }
+    },
+
+    "reg_alloc_table" : {
+        "__comment__" : "TASK_ID : [REG_ID, DP_COUNTER_SIZE, CP_COUNTER_SIZE, ARRAY_SIZE, ELEPHANT_ARRAY_SIZE (not used if elephant_region is false)]",
+        "0" : [0, 4, 29, 19, 13]
+    },
+    "blocklist_size": 16,
+
+    "shrink_ratio_exp": 0,
+    "pcap_file" : "202404251400.pcap",
+    "benign_volume" : 1,
+    "attack_volume" : 0,
+    "atk_profile" : "my3",
+    "benign_unique_flowkey" : 30000,
+    "attack_unique_ip" : 10000,
+    "tick_divisor" : 10,
+    "attack_start_subtick": 0,
+    "attack_tick_to_subtick": 10,
+    "refresh_cycle" : [8],
+    "n_hash" : 4,
+    "crc_polynomial_degree" : 32,
+    "seed" : 1234,
+
+    "elephant_region" : true,
+    "elephant_cycle" : 1,
+
+    "adaptive_memory" : false,
+    "adaptive_memory_cycle": 1,
+
+    "statistics_cycle_tick" : 1,
+    "statistics_cycle_subtick" : 1,
+    "cp_processing_threshold" : 2,
+    "data_to_control_channel_bandwidth" : 10,
+    "mem_usage" : false,
+
+    "__comment__" : ["benign_volume/attack_volume/cp_processing_threshold/data_to_control_channel_bandwidth (Gbps)",
+                     "refresh_cycle/elephant_cycle/adaptive_memory_cycle/statistics_cycle_tick (seconds)",
+                     "attack_start_subtick/attack_tick_to_subtick/statistics_cycle_subtick ((1/tick_divisor) seconds)",
+                     "crc_polynomial_degree can be one of [8, 16, 24, 32, 64] (24 or above is recommended)"
+                    ]
+}
